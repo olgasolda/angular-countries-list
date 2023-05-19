@@ -1,0 +1,9 @@
+<h2 *ngIf="selectedCountryCapital">
+  {{selectedCountryCapital}}
+</h2>
+
+<ul>
+  <li *ngFor="let country of countriesList" (click)="onSelect(country)">
+    {{country.name}}
+  </li>
+</ul>
